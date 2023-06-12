@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашняя работа #1 JS</title>
+</head>
+<body>
+    <script>
+        /* ====Задача 1=====*/
+        var Number=+prompt('Задача 1.\nВведите число: ');
+        if(Number>=1 && Number<=10 && Number%2===0){
+            alert("True");
+        }
+        else{alert("FALSE")}
+
+        /*====Задача 2*=====*/
+        var Number1=+prompt('Задача 2.\nВведите первое число: ');
+        var Number2=+prompt('Введите второе число: ');         
+        var  step=2;       
+        for(var i=Number1;i<=Number2;i++){
+        for(var j=0;j<20;j++)
+        {       
+           if(i===step**j)     
+            console.log(i);                       
+         }
+        }
+             /*====Задача 3=====*/
+        var n1=+prompt('Задача 3.\nВведите число: ');
+        var sum=n1;
+        var it=1;
+        while(true)
+        if(confirm('Хотите ли вы ввести еще число?'))
+        {
+            var n2=+prompt('Введите число:');  
+            sum+=n2;
+        }            
+        else{
+         alert(`Сумма всех введенных чисел = ${sum}`);
+         break;
+        }
+           /*====Задача 4=====*/
+           var str=prompt("Задача 4.\nВведите строку:");           
+           var spaceCount = str.match(/\s/g);
+           var numbOneCount=str.match(/[1]/g);
+           var sumSymb=spaceCount+numbOneCount;         
+            if(spaceCount!=null && numbOneCount!=null)
+            {              
+                str=str.replace(/\s+/g, '').replace(/[1]/g, '');
+                alert(str);                
+            }
+            else{alert('в строке отсутсвуют: ПРОБЕЛ,  1');}
+            
+             /*====Задача 5=====*/                   
+            var count=0; 
+            console.clear();          
+            do{
+                var rand=Math.floor(Math.random()*(20-1))+1;
+                if(rand%3!=0){
+                  console.log(rand);
+                  count++;
+                }
+            }while(count<10)
+            
+                
+              
+             
+           
+         
+
+              
+     
+       
+                
+                
+                           
+                    
+                   
+                
+            
+            
+           
+        
+
+
+
+
+
+    </script>    
+</body>
+</html>
